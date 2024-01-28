@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends --no-install-suggests \
     vim netcat-openbsd less locales-all
 
-ADD https://github.com/github/gh-ost/releases/download/v1.0.48/gh-ost-binary-linux-20190214020851.tar.gz /tmp/gh-ost.tar.gz
+ADD https://github.com/github/gh-ost/releases/download/v1.1.6/gh-ost-binary-linux-amd64-20231207144046.tar.gz /tmp/gh-ost.tar.gz
 RUN mkdir -p /tmp/gh-ost && \
     tar zxvf /tmp/gh-ost.tar.gz -C /tmp/gh-ost && \
     mv /tmp/gh-ost/gh-ost /usr/local/bin/
