@@ -7,7 +7,7 @@ RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A8D3785C && \
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends --no-install-suggests \
-    vim netcat-openbsd less locales-all
+    vim netcat-openbsd less locales-all procps
 
 ADD https://github.com/github/gh-ost/releases/download/v1.1.6/gh-ost-binary-linux-amd64-20231207144046.tar.gz /tmp/gh-ost.tar.gz
 RUN mkdir -p /tmp/gh-ost && \
